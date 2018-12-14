@@ -1,0 +1,22 @@
+.development__container {
+  padding-top: 95px;
+}
+
+.development__about {
+  text-align: center;
+}
+
+.development__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  @include title;
+}
+
+.development__desctiption {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.development__objectives {
+  margin-top: 70px;
+}

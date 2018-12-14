@@ -1,0 +1,54 @@
+{
+  "name": "Legion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "eslint": "eslint js/",
+    "build": "gulp build",
+    "start": "gulp serve",
+    "test": "npm run eslint && gulp test"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.7.7",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
+    "babel-register": "6.26.0",
+    "browser-sync": "2.18.8",
+    "css-mqpacker": "6.0.0",
+    "del": "2.2.2",
+    "eslint": "3.19.0",
+    "eslint-config-htmlacademy": "0.2.x",
+    "gulp": "3.9.1",
+    "gulp-better-rollup": "3.1.0",
+    "gulp-csso": "3.0.0",
+    "gulp-imagemin": "3.2.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "7.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.0"
+  },
+  "engines": {
+    "node": "6.10"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "dependencies": {
+    "gulp-posthtml": "^3.0.4",
+    "gulp.spritesmith": "^6.9.0",
+    "lg-autoplay": "^1.0.4",
+    "lg-fullscreen": "^1.0.1",
+    "lg-hash": "^1.0.4",
+    "lg-pager": "^1.0.2",
+    "lg-share": "^1.1.0",
+    "lg-thumbnail": "^1.1.0",
+    "lg-video": "^1.2.2",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.11",
+    "merge-stream": "^1.0.1",
+    "posthtml-include": "^1.2.0"
+  }
+}

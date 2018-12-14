@@ -1,0 +1,19 @@
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: $container-mobile;
+  max-width: $container-tablet;
+  width: auto;
+
+  @media (min-width: $screen-tablet) {
+    min-width: auto;
+    max-width: none;
+    width: $container-tablet;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $container-desktop;
+  }
+}

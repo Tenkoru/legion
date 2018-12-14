@@ -1,0 +1,113 @@
+.hexagon {
+  display: inline-block;
+  position: relative;
+  width: 96px;
+  height: 55.43px;
+  background-color: transparent;
+  margin: 27.71px 0;
+  border-left: solid 2px $color-main-blue;
+  border-right: solid 2px $color-main-blue;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 67.88px;
+  height: 67.88px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 12.0589px;
+}
+
+.hexagon:before {
+  top: -33.9411px;
+  border-top: solid 2.8284px $color-main-blue;
+  border-right: solid 2.8284px $color-main-blue;
+}
+
+.hexagon:after {
+  bottom: -33.9411px;
+  border-bottom: solid 2.8284px $color-main-blue;
+  border-left: solid 2.8284px $color-main-blue;
+}
+
+.hexagon--green {
+  border-left: solid 2px $color-main-green;
+  border-right: solid 2px $color-main-green;
+
+  &::before {
+    border-top: solid 2.8284px $color-main-green;
+    border-right: solid 2.8284px $color-main-green;
+  }
+
+  &::after {
+    border-bottom: solid 2.8284px $color-main-green;
+    border-left: solid 2.8284px $color-main-green;
+  }
+}
+
+.hexagon--red {
+  border-left: solid 2px $color-main-red;
+  border-right: solid 2px $color-main-red;
+
+  &::before {
+    border-top: solid 2.8284px $color-main-red;
+    border-right: solid 2.8284px $color-main-red;
+  }
+
+  &::after {
+    border-bottom: solid 2.8284px $color-main-red;
+    border-left: solid 2.8284px $color-main-red;
+  }
+}
+
+.hexagon__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hexagon__image--team {
+  @include sprite($icon-team);
+}
+
+.hexagon__image--increase {
+  @include sprite($icon-increase);
+}
+
+.hexagon__image--service {
+  @include sprite($icon-service);
+}
+
+.hexagon__image--binocular {
+  @include sprite($icon-binocular);
+}
+
+.hexagon__image--communication {
+  @include sprite($icon-communication);
+}
+
+.hexagon__image--computer-secure {
+  @include sprite($icon-computer-secure);
+}
+
+.hexagon__image--shield {
+  @include sprite($icon-shield);
+}
+
+.hexagon__image--pendrive {
+  @include sprite($icon-pendrive);
+}
+
+.hexagon__image--clock {
+  @include sprite($icon-clock);
+}
+
+.hexagon__image--network {
+  @include sprite($icon-networking);
+}

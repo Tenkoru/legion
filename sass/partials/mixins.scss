@@ -1,0 +1,12 @@
+@mixin simple-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin title {
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+

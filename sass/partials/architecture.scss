@@ -1,0 +1,109 @@
+.architecture {
+  background:transparent url('../img/poly-bg.jpg') left top no-repeat;
+}
+
+.architecture__container {
+  padding-top: 120px;
+}
+
+.architecture__header {
+  text-align: center;
+}
+
+.architecture__title {
+  @include title;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.architecture__description {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  max-width: 600px;
+}
+
+.architecture__about {
+  margin-top: 55px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.architecture__list {
+  @include simple-list;
+  display: flex;
+  margin-top: 15px;
+  padding-left: 30px;
+
+  @media (max-width: $screen-tablet) {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+}
+
+.architecture__item {
+  position: relative;
+  margin-left: -30px;
+  padding-top: 20px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  background-color: $color-architecture-item-bg;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+
+  @media (max-width: $screen-tablet) {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 5px;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: initial;
+  }
+}
+
+.architecture__arrow {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 38px;
+  top: 0;
+  right: 0;
+  z-index: 100;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $color-architecture-arrow;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 50%;
+    transform: skew(30deg, 0);
+  }
+
+  &::before {
+    top: 50%;
+    transform: skew(-30deg, 0);
+  }
+
+  @media (max-width: $screen-tablet) {
+    top: 100%;
+    right: 50%;
+    transform: rotate(90deg) translate(-115%, -50%);
+  }
+}
+
+.architecture__image {
+  display: block;
+  width: 100%;
+}
+
+.architecture__info {
+  margin-top: 10px;
+}

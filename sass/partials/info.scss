@@ -1,0 +1,32 @@
+.info {
+  display: flex;
+
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+  }
+}
+
+.info__block {
+  padding-left: 30px;
+
+  @media (max-width: 700px) {
+    padding-left: 0;
+  }
+}
+
+.info__button {
+  min-width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-main-blue;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.info__description {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}

@@ -1,0 +1,89 @@
+.hero {
+  background:transparent url('../img/photo.jpg') left top no-repeat;
+  background-size: cover;
+}
+
+.hero__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 75px;
+  padding-bottom: 90px;
+}
+
+.hero__logo {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hero__logo-img {
+  display: block;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.hero__description {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 31px;
+  padding-right: 45px;
+  padding-bottom: 31px;
+  padding-left: 23px;
+  background-color: $color-main-blue;
+  color: $color-white;
+  font-weight: bold;
+}
+
+.hero__interaction {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+
+  @media (min-width: 480px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: auto;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+}
+
+.hero__button {
+  min-width: 210px;
+  padding: 20px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.hero__button--cost {
+  margin-bottom: auto;
+  color: $color-white;
+  background-color: $color-cost-button;
+}
+
+.hero__button--dowload {
+  position: relative;
+  padding-left: 34px;
+  color: $color-cost-button;
+  background-color: $color-white;
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include sprite($icon-download);
+  }
+}
